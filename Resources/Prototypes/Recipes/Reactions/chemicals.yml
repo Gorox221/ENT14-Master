@@ -501,3 +501,23 @@
       amount: 1
   products:
     Tazinide: 1
+
+- type: reaction
+  id: LightningExplosion
+  impact: High
+  priority: 20
+  reactants:
+    Iron:
+      amount: 10
+    Uranium:
+      amount: 10
+    Licoxide:
+      amount: 10
+  effects:
+    - !type:LightningReactionEffect
+      maxLightningArc: 10
+      shootMinInterval: 0.1
+      shootMaxInterval: 0.1
+      shootRange: 1
+      arcDepth: 3
+      lightningPrototype: Lightning
